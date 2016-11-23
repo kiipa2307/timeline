@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' type='text/css' href='http://icambron.github.com/timestack/files/timestack.css'/>
+        <script type="text/javascript" src='http://code.jquery.com/jquery-1.8.0.min.js'></script>
+        <script type="text/javascript" src='http://icambron.github.com/timestack/files/moment.min.js'></script>
+        <script type="text/javascript" src='http://icambron.github.com/timestack/files/timestack.min.js'></script>
+        
+        <link rel='stylesheet' type='text/css' href='../files/timestack.css'/>
+        
+        <style>
+             body {
+               background-color: #f7f7f7;
+             }
+        </style>
+        
+        <script>
+          $(function(){
+            $('#timeline').timestack({
+              span: 'month',
+              click: function(data){
+                $('#title').text(data.title);
+                $('#dates').text(data.timeDisplay);
+                $('#content').empty().append(data.content);
+              },
+              data: [
+                {
+                    start: 'JAN 2016',
+                    end: 'DEC 2016',
+                    title: 'Archiv',
+                    content: "<p>Archivarische Bestandserfassung und Sicherung des Nachlasses</p>",
+                    color: 'rgb(149, 203, 255)'
+                },
+                {
+                  start: 'JAN 2016',
+                  end: 'OCT 2016',
+                  title: 'Zettelkasten',
+                  content: "<p>Digitalisierung des Zettelkastens</p>",
+                  color: 'rgb(204, 204, 255)'
+                },
+                {
+                  start: 'FEB 2016',
+                  end: 'OCT 2016',
+                  title: 'Bibliographie',
+                  content: "<p>Erstellung und Online-Publikation einer Komplettbibliographie Niklas Luhmanns</p>",
+                  color: 'rgb(151, 255, 177)'
+                },
+                {
+                  start: 'OCT 2016',
+                  end: 'NOV 2016',
+                  title: 'Bilddatenbank',
+                  content: "<p>Online-Veröffentlichung der Bilddatenbank des Zettelkastens 1 (1951-62) in der Digitalen Sammlung der Universitätsbibliothek Bielefeld</p>",
+                  color: 'rgb(255, 149, 192)'
+                },
+                {
+                  start: 'NOV 2016',
+                  end: 'DEC 2016',
+                  title: 'Manuskripte',
+                  content: "<p>Digitalisierung der Manuskripte</p>",
+                  color: 'rgb(255, 255, 102)'
+                },
+                {
+                  start: 'OCT 2016',
+                  end: 'DEC 2016',
+                  title: 'Manuskripte',
+                  content: "<p>Editorische Bearbeitung des Manuskripts 'Gesellschaftstheorie 1975'</p>",
+                  color: 'rgb(255, 204, 102)'
+                } 
+              ]
+            });
+          });
+        </script>
+        <style>
+         #display {
+           padding-top: 10px;
+           clear: both;
+         }
+       </style>
+    </head>
+    <body>
+        <h3>Timeline Luhmann-Projekt</h3>
+        
+        <div id='timeline'></div>
+        
+        <div id='display'>
+            <h1 id='title'></h1>
+            <h3 id='dates'></h3>
+            <div id='content'/>
+        </div>
+    </body>
+</html>

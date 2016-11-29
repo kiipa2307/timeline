@@ -37,7 +37,7 @@ ul.intervals {
   padding: 0;
   margin: 0;
   display: block;
-  width: 90%; /* 100% */
+  width: 100%; /* 100% */
 }
 ul.intervals li {
   box-sizing: border-box;
@@ -48,7 +48,7 @@ ul.intervals li {
   float: left;
   font-size: 0.8em; /* 1.2 */
   margin: 0;
-  padding: 10px 0; /* 15px 0*/
+  padding: 15px 0; /* 15px 0*/
   text-align: center;
 }
 ul.intervals li:first-child {
@@ -58,12 +58,12 @@ ul.intervals li:first-child {
 ul.intervals li:last-child {
   border-right: 1px solid #ccc;
 }
-/*
+
 ul.intervals:after {
   content: ".";
-  /*visibility: hidden;
+  visibility: hidden;
   display: block;
   height: 0;
   clear: both;
   margin-bottom: 8px;
-}*/
+}

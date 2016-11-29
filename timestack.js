@@ -17,10 +17,10 @@
                         return "" + startStr + " - " + endStr
                     },
                     span: "year", dateFormats: {
-                        year: "MMM YYYY", month: "MMM YYYY", day: "MMM DD", hour: "h:mm a"
+                        year: "MMM YYYY", month: "DD MMM YYYY", day: "MMM DD", hour: "h:mm a"
                     },
                     intervalFormats: {
-                        year: "YYYY", month: "DD MMM YYYY", day: "MMM DD", hour: "h:mm a"
+                        year: "YYYY", month: "MMM YYYY", day: "MMM DD", hour: "h:mm a"
                     }
                 };
                 options = $.extend(defaults, options);
@@ -95,9 +95,9 @@
                             $ul.append($li)
                         }
                         i.timeDisplay = options.renderDates(i);
-                        timespan = $("<em>(" + i.timeDisplay + ")</em>").addClass("timestack-time");
+                        /**/
                         titlespan = $("<span>" + i.title + " </span>").addClass("timestack-title");
-                        labelspan = $("<span></span>").addClass("timestack-label").append(titlespan).append(timespan);
+                        labelspan = $("<span></span>").addClass("timestack-label").append(titlespan);
                         width =((i.end - i.start) / diff * 100 -.01).toFixed(3);
                         offset =((i.start - earliest) / diff * 100 -.01).toFixed(3);
                         $li.prepend(labelspan).css("margin-left", "" + offset + "%").css("width", "" + width + "%").click(function (i) {

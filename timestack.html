@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8"> 
+    <meta charset="utf-8"/> 
     <link rel='stylesheet' type='text/css' href='timestack.css'/>
     <script type="text/javascript" src='http://code.jquery.com/jquery-1.8.0.min.js'></script>
     <script type="text/javascript" src='moment.js'></script>
@@ -20,7 +20,7 @@
               span: 'month',
               /*onmouseover: function(data),*/
               click: function(data){
-                $('#title').text(data.title);
+                $('#title').text(title);
                 $('#dates').text(data.timeDisplay);
                 $('#content').empty().append(data.content);
               },
@@ -30,49 +30,49 @@
                     end: '31 DEC 2016',
                     title: 'Archiv',
                     content: '<p>Archivarische Bestandserfassung und Sicherung des Nachlasses</p>',
-                    color: 'rgb(102, 179, 255)'
+                    color: 'rgb(102, 194, 255)'
                 },
                 {
                   start: '01 JAN 2016',
                   end: '31 OCT 2016',
                   title: 'Zettelkasten',
                   content: '<p>Digitalisierung des Zettelkastens</p>',
-                  color: 'rgb(0, 77, 153)'
+                  color: 'rgb(102, 102, 255)'
                 },
                 {
                   start: '01 FEB 2016',
                   end: '31 OCT 2016',
                   title: 'Bibliographie',
                   content: "<p>Erstellung und Online-Publikation einer Komplettbibliographie Niklas Luhmanns</p>",
-                  color: 'rgb(0, 102, 204)'
+                  color: 'rgb(0, 230, 115)'
                 },
                 {
                   start: '01 OCT 2016',
                   end: '30 NOV 2016',
                   title: 'Bilddatenbank',
                   content: "<p>Online-Veröffentlichung der Bilddatenbank des Zettelkastens 1 (1951-62) in der Digitalen Sammlung der Universitätsbibliothek Bielefeld</p>",
-                  color: 'rgb(153, 204, 255)'
+                  color: 'rgb(255, 102, 102)'
                 },
                 {
                   start: '01 NOV 2016',
                   end: '31 DEC 2016',
                   title: 'Manuskripte',
                   content: "<p>Digitalisierung der Manuskripte</p>",
-                  color: 'rgb(230, 243, 255)'
+                  color: 'rgb(255, 195, 77)'
                 },
                 {
                   start: '01 OCT 2016',
                   end: '31 DEC 2016',
                   title: 'Manuskripte',
                   content: "<p>Editorische Bearbeitung des Manuskripts 'Gesellschaftstheorie 1975'</p>",
-                  color: 'rgb(230, 243, 255)'
+                  color: 'rgb(255, 195, 77)'
                 },
                 {
                   start: '01 DEC 2016',
                   end: '31 DEC 2016',
-                  title: 'Podiums-diskussion',
+                  title: 'Podiumsdiskussion',
                   content: "<p>Symposium 'Luhmann und die Kultur' in der Akademie der Wissenschaften und der Künste NRW in Düsseldorf</p>",
-                  color: 'rgb(26, 144, 255)'
+                  color: 'rgb(255, 255, 102)'
                 } 
               ]
             });
@@ -90,60 +90,60 @@
                     end: '31 MAY 2017',
                     title: 'Manuskripte',
                     content: "<p>Digitalisierung der Manuskripte</p>",
-                    color: 'rgb(230, 243, 255)'
+                    color: 'rgb(255, 195, 77)'
                 },
                 {
                   start: '01 JAN 2017',
                   end: '31 DEC 2017',
                   title: 'Manuskripte',
                   content: "<p>Editorische Bearbeitung des Manuskripts 'Gesellschaftstheorie 1975' (Buch- und Internetpublikation)</p>",
-                  color: 'rgb(230, 243, 255)'
+                  color: 'rgb(255, 195, 77)'
                 },
                 {
                   start: '01 JAN 2017',
                   end: '30 JUN 2017',
                   title: 'Archivdatenbank',
                   content: "<p>Verzeichnung der Manuskripte in der Archivdatenbank Augias</p>",
-                  color: 'rgb(102, 179, 255)'
+                  color: 'rgb(102, 194, 255)'
                 },
                 {
                   start: '01 JAN 2017',
                   end: '31 DEC 2017',
                   title: 'Zettelkasten',
                   content: "<p>Transkription, Edition und Online-Publikation der Auszüge 1 und 2 des Zettelkastens I</p>",
-                  color: 'rgb(0, 77, 153)'
+                  color: 'rgb(102, 102, 255)'
                 },
                 {
                   start: '01 SEP 2017',
                   end: '30 SEP 2017',
                   title: 'Online-Portal',
                   content: "<p>Start des Online-Forschungsportals des Niklas Luhmann-Archivs</p>",
-                  color: 'rgb(0, 45, 179)'
+                  color: 'rgb(77, 255, 166)'
                 },
                 {
                   start: '01 SEP 2017',
                   end: '30 SEP 2017',
-                  title: 'Bilddaten-bank',
+                  title: 'Bilddatenbank',
                   content: "<p>Online-Veröffentlichung der Bilddatenbank des Zettelkastens II (1963-1966) in der Digitalen Sammlung der Universitätsbibliothek Bielefeld</p>",
-                  color: 'rgb(153, 204, 255)'
+                  color: 'rgb(255, 102, 102)'
                 }, 
                  {
                   start: '01 NOV 2017',
                   end: '30 NOV 2017',
                   title: 'Manuskripte',
                   content: "<p>Veröffentlichung des Manuskripts 'Gesellschaftstheorie 1975' im Suhrkamp-Verlag</p>",
-                  color: 'rgb(230, 243, 255)'
+                  color: 'rgb(255, 195, 77)'
                 }
               ]
             });
           });
         </script>
-    <style>
-         #display {
-           padding-top: 10px;
-           clear: both;
-         }
-       </style>
+        <style>
+           #display {
+             padding-top: 10px;
+             clear: both;
+           }
+        </style>
   </head>
   <body>
     <h3>Timeline Luhmann-Projekt</h3>
